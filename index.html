@@ -6,6 +6,7 @@
   <title>GateTak Legal & Support Portal</title>
   <link rel="stylesheet" href="./assets/css/styles.css">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="./assets/js/main.js" defer></script>
 </head>
 <body>
 
@@ -15,6 +16,11 @@
         <div class="logo-icon">G</div>
         <span>GateTak</span>
       </a>
+      <button class="mobile-menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
       <ul class="nav-links">
         <li><a href="./index.html" class="active">Home</a></li>
         <li><a href="./customer/terms.html">Customer Legal</a></li>
@@ -80,9 +86,9 @@
 
     <!-- Support and Deletion Grid -->
     <section class="container" style="margin-top: 40px;">
-      <div class="portal-grid" style="grid-template-columns: repeat(2, 1fr);">
+      <div class="portal-grid-2">
         
-        <a href="./contact.html" class="portal-card" style="text-align: left; padding: 30px;">
+        <a href="./contact.html" class="portal-card portal-card-left">
           <h4 style="font-size: 20px; margin-bottom: 10px; color: var(--text-primary);">Need General Support?</h4>
           <p style="margin-bottom: 16px;">Have questions about our services or need assistance with your active orders? Contact our support agents directly.</p>
           <div class="portal-btn" style="justify-content: flex-start;">
@@ -91,7 +97,7 @@
           </div>
         </a>
 
-        <a href="./delete-account.html" class="portal-card" style="text-align: left; padding: 30px;">
+        <a href="./delete-account.html" class="portal-card portal-card-left">
           <h4 style="font-size: 20px; margin-bottom: 10px; color: var(--danger);">Request Account Deletion</h4>
           <p style="margin-bottom: 16px;">Would you like to delete your account? You can submit your account deletion request securely using our portal form.</p>
           <div class="portal-btn" style="justify-content: flex-start; color: var(--danger);">
