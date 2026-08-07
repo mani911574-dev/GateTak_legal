@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Customer Privacy Policy — GateTak</title>
+  <title>Privacy Policy — GateTak Privacy & Terms</title>
   <link rel="stylesheet" href="../assets/css/styles.css">
   <script src="../assets/js/main.js" defer></script>
 </head>
@@ -13,20 +13,47 @@
     <div class="container header-inner">
       <a href="../index.html" class="logo">
         <div class="logo-icon">G</div>
-        <span>GateTak</span>
+        GateTak <span>Privacy & Terms</span>
       </a>
-      <button class="mobile-menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
       <ul class="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="./terms.html" class="active">Customer Legal</a></li>
-        <li><a href="../rider/terms.html">Rider Legal</a></li>
-        <li><a href="../vendor/terms.html">Vendor Legal</a></li>
-        <li><a href="../contact.html" class="cta-button">Contact Support</a></li>
+        <li><a href="./overview.html">Overview</a></li>
+        <li><a href="./privacy.html" class="active">Privacy Policy</a></li>
+        <li><a href="./terms.html">Terms of Service</a></li>
+        <li><a href="./refund.html">Refund Policy</a></li>
+        <li><a href="./faq.html">FAQ</a></li>
       </ul>
+      <div class="header-right">
+        <button class="grid-toggle" aria-label="Portals list">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"/></svg>
+        </button>
+        <div class="apps-dropdown">
+          <a href="../index.html" class="apps-item">
+            <div class="apps-item-icon">H</div>
+            <span>Home</span>
+          </a>
+          <a href="./overview.html" class="apps-item">
+            <div class="apps-item-icon">C</div>
+            <span>Customer Portal</span>
+          </a>
+          <a href="../rider/overview.html" class="apps-item">
+            <div class="apps-item-icon">R</div>
+            <span>Rider Portal</span>
+          </a>
+          <a href="../vendor/overview.html" class="apps-item">
+            <div class="apps-item-icon">V</div>
+            <span>Vendor Portal</span>
+          </a>
+          <a href="../contact.html" class="apps-item">
+            <div class="apps-item-icon">S</div>
+            <span>Contact Support</span>
+          </a>
+          <a href="../delete-account.html" class="apps-item">
+            <div class="apps-item-icon">D</div>
+            <span>Delete Account</span>
+          </a>
+        </div>
+        <div class="user-profile">G</div>
+      </div>
     </div>
   </header>
 
@@ -34,28 +61,28 @@
     <div class="legal-layout">
       
       <aside class="sidebar">
-        <h4 class="sidebar-title">Customer Legal</h4>
+        <h4 class="sidebar-title">Privacy Outline</h4>
         <ul class="sidebar-menu">
-          <li><a href="./overview.html">Overview</a></li>
-          <li><a href="./terms.html">Terms & Conditions</a></li>
-          <li><a href="./privacy.html" class="active">Privacy Policy</a></li>
-          <li><a href="./refund.html">Refund & Cancellation</a></li>
-          <li><a href="./faq.html">FAQ</a></li>
-          <li><a href="../delete-account.html">Delete Account</a></li>
-          <li><a href="../contact.html">Contact Support</a></li>
+          <li><a href="#collect" class="active">1. Information We Collect</a></li>
+          <li><a href="#location-req">2. Location Data Rules</a></li>
+          <li><a href="#use">3. How We Use Data</a></li>
+          <li><a href="#sharing">4. Data Sharing</a></li>
+          <li><a href="#security">5. Data Security</a></li>
+          <li><a href="#deletion">6. User Controls & Deletion</a></li>
+          <li><a href="#contact-support">7. Contact Support</a></li>
         </ul>
       </aside>
 
       <article class="legal-content">
         <div class="doc-header">
-          <h1>Privacy Policy</h1>
+          <h1>Customer Privacy Policy</h1>
           <p class="doc-date">Last Updated: August 7, 2026</p>
         </div>
 
         <div class="doc-body">
           <p>GateTak ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy details how we collect, store, share, and protect your personal information when you use the GateTak mobile application and online delivery platform.</p>
 
-          <h2>1. Information We Collect</h2>
+          <h2 id="collect">1. Information We Collect</h2>
           <p>We collect information to provide a seamless and secure delivery experience. This includes:</p>
           <ul>
             <li><strong>Personal Profile Data:</strong> Full name, email address, password credentials, and active phone number entered during user signup.</li>
@@ -63,17 +90,17 @@
             <li><strong>Device and Usage Information:</strong> IP address, device type, operating system version, and mobile app usage metrics.</li>
           </ul>
 
-          <h2>2. Location Data (Play Store Core Requirement)</h2>
+          <h2 id="location-req">2. Location Data (Play Store Core Requirement)</h2>
           <p>To enable core platform delivery services, <strong>GateTak collects precise location data (GPS coordinates) from your device</strong>. This data is collected:</p>
           <ul>
             <li>To identify your delivery address coordinates and fill coordinates on the checkout map.</li>
             <li>To calculate the precise distance fee between the merchant store and your selected delivery location.</li>
-            <li>To matches your active orders with delivery riders working nearby.</li>
+            <li>To match your active orders with delivery riders working nearby.</li>
             <li>To provide live real-time tracking of the delivery rider as they approach your address.</li>
           </ul>
           <p>Location data is collected when the GateTak app is running in the foreground. If you deny location access, you can still use the app by manually inputting address search coordinates, though auto-calculations will be limited.</p>
 
-          <h2>3. How We Use Your Data</h2>
+          <h2 id="use">3. How We Use Your Data</h2>
           <p>We process your personal information for purposes including:</p>
           <ul>
             <li>Setting up and managing your customer profile and account access.</li>
@@ -83,7 +110,7 @@
             <li>Preventing fraudulent cash-on-delivery placements and platform abuse.</li>
           </ul>
 
-          <h2>4. Data Sharing and Disclosure</h2>
+          <h2 id="sharing">4. Data Sharing and Disclosure</h2>
           <p>We do not sell your personal data. We share necessary order components with:</p>
           <ul>
             <li><strong>Delivery Riders:</strong> Your delivery coordinates, address note, phone number, and name are shared with the assigned rider to facilitate delivery completion.</li>
@@ -91,13 +118,13 @@
             <li><strong>Legal Authorities:</strong> We may share data when required by law or to protect safety, property, and platform integrity.</li>
           </ul>
 
-          <h2>5. Data Security</h2>
+          <h2 id="security">5. Data Security</h2>
           <p>We use industry-standard encryption, secure servers, and firewall measures to safeguard your credentials. However, no digital transmission is 100% secure. You are responsible for keeping your password private.</p>
 
-          <h2>6. User Controls and Account Deletion</h2>
+          <h2 id="deletion">6. User Controls and Account Deletion</h2>
           <p>You have full rights to access, correct, or delete your account records. To request removal of your data permanently from our servers, you can use our <a href="../delete-account.html">Account Deletion Page</a>. We process requests within 7 business days.</p>
 
-          <h2>7. Contact Support</h2>
+          <h2 id="contact-support">7. Contact Support</h2>
           <p>For privacy queries, data access requests, or policy updates, contact our privacy officer through our <a href="../contact.html">Support Form</a>.</p>
         </div>
       </article>
@@ -109,9 +136,9 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col footer-about">
-          <a href="../index.html" class="logo" style="color: #FFF;">
+          <a href="../index.html" class="logo">
             <div class="logo-icon">G</div>
-            <span>GateTak</span>
+            GateTak <span>Legal</span>
           </a>
           <p>GateTak is a smart on-demand delivery network delivering foods, grocery items, and sweets to your doorstep with speed and security.</p>
         </div>

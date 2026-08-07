@@ -1,39 +1,69 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const toggleBtn = document.querySelector('.mobile-menu-toggle');
-  const navLinks = document.querySelector('.nav-links');
+  // Grid Apps Switcher menu toggle
+  const gridToggle = document.querySelector('.grid-toggle');
+  const appsDropdown = document.querySelector('.apps-dropdown');
 
-  if (toggleBtn && navLinks) {
-    toggleBtn.addEventListener('click', (e) => {
+  if (gridToggle && appsDropdown) {
+    gridToggle.addEventListener('click', (e) => {
       e.stopPropagation();
-      const isActive = navLinks.classList.toggle('nav-active');
-      toggleBtn.classList.toggle('toggle-active');
-      toggleBtn.setAttribute('aria-expanded', isActive);
+      appsDropdown.classList.toggle('active');
     });
 
-    // Close menu when clicking outside
+    // Close dropdown on click outside
     document.addEventListener('click', (e) => {
-      if (!navLinks.contains(e.target) && !toggleBtn.contains(e.target)) {
-        navLinks.classList.remove('nav-active');
-        toggleBtn.classList.remove('toggle-active');
-        toggleBtn.setAttribute('aria-expanded', 'false');
+      if (!appsDropdown.contains(e.target) && !gridToggle.contains(e.target)) {
+        appsDropdown.classList.remove('active');
       }
     });
+  }
 
-    // Close menu when clicking on nav link (helpful if navigation is smooth-scroll or on fast link clicks)
-    navLinks.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        navLinks.classList.remove('nav-active');
-        toggleBtn.classList.remove('toggle-active');
-        toggleBtn.setAttribute('aria-expanded', 'false');
+  // Smooth scroll and scrollspy active tracking for table of contents
+  const sidebarLinks = document.querySelectorAll('.sidebar-menu a');
+  const headings = document.querySelectorAll('.doc-body h2');
+
+  if (sidebarLinks.length > 0 && headings.length > 0) {
+    // Smooth scrolling anchor handler
+    sidebarLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        const targetId = link.getAttribute('href');
+        if (targetId && targetId.startsWith('#')) {
+          e.preventDefault();
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+            // Fallback for highlighting active immediately
+            sidebarLinks.forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
+          }
+        }
       });
     });
 
-    // Close menu when window resized above mobile threshold
-    window.addEventListener('resize', () => {
-      if (window.innerWidth > 768) {
-        navLinks.classList.remove('nav-active');
-        toggleBtn.classList.remove('toggle-active');
-        toggleBtn.setAttribute('aria-expanded', 'false');
+    // Scrollspy active tracker observer
+    const observerOptions = {
+      root: null,
+      rootMargin: '-80px 0px -70% 0px',
+      threshold: 0
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const activeId = '#' + entry.target.id;
+          sidebarLinks.forEach(link => {
+            if (link.getAttribute('href') === activeId) {
+              link.classList.add('active');
+            } else {
+              link.classList.remove('active');
+            }
+          });
+        }
+      });
+    }, observerOptions);
+
+    headings.forEach(heading => {
+      if (heading.id) {
+        observer.observe(heading);
       }
     });
   }

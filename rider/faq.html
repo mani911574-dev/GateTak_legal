@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rider Compliance & Support FAQs — GateTak</title>
+  <title>FAQ — GateTak Rider</title>
   <link rel="stylesheet" href="../assets/css/styles.css">
   <script src="../assets/js/main.js" defer></script>
   <style>
@@ -11,7 +11,7 @@
       border: 1px solid var(--border-color);
       border-radius: 8px;
       margin-bottom: 12px;
-      background-color: var(--card-bg);
+      background-color: var(--bg-color);
       overflow: hidden;
     }
     .faq-question {
@@ -23,11 +23,10 @@
       justify-content: space-between;
       align-items: center;
       user-select: none;
-      background-color: var(--card-bg);
       transition: background-color 0.2s;
     }
     .faq-question:hover {
-      background-color: var(--bg-color);
+      background-color: var(--primary-light);
     }
     .faq-answer {
       padding: 0 20px;
@@ -59,93 +58,101 @@
     <div class="container header-inner">
       <a href="../index.html" class="logo">
         <div class="logo-icon">G</div>
-        <span>GateTak</span>
+        GateTak <span>Rider</span>
       </a>
-      <button class="mobile-menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
       <ul class="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../customer/overview.html">Customer Legal</a></li>
-        <li><a href="./overview.html" class="active">Rider Legal</a></li>
-        <li><a href="../vendor/overview.html">Vendor Legal</a></li>
-        <li><a href="../contact.html" class="cta-button">Contact Support</a></li>
+        <li><a href="./overview.html">Overview</a></li>
+        <li><a href="./privacy.html">Privacy Policy</a></li>
+        <li><a href="./terms.html">Terms of Service</a></li>
+        <li><a href="./faq.html" class="active">FAQ</a></li>
       </ul>
+      <div class="header-right">
+        <button class="grid-toggle" aria-label="Portals list">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"/></svg>
+        </button>
+        <div class="apps-dropdown">
+          <a href="../index.html" class="apps-item">
+            <div class="apps-item-icon">H</div>
+            <span>Home</span>
+          </a>
+          <a href="../customer/overview.html" class="apps-item">
+            <div class="apps-item-icon">C</div>
+            <span>Customer Portal</span>
+          </a>
+          <a href="./overview.html" class="apps-item">
+            <div class="apps-item-icon">R</div>
+            <span>Rider Portal</span>
+          </a>
+          <a href="../vendor/overview.html" class="apps-item">
+            <div class="apps-item-icon">V</div>
+            <span>Vendor Portal</span>
+          </a>
+          <a href="../contact.html" class="apps-item">
+            <div class="apps-item-icon">S</div>
+            <span>Contact Support</span>
+          </a>
+          <a href="../delete-account.html" class="apps-item">
+            <div class="apps-item-icon">D</div>
+            <span>Delete Account</span>
+          </a>
+        </div>
+        <div class="user-profile">G</div>
+      </div>
     </div>
   </header>
 
   <main class="container">
-    <div class="legal-layout">
-      
-      <aside class="sidebar">
-        <h4 class="sidebar-title">Rider Legal</h4>
-        <ul class="sidebar-menu">
-          <li><a href="./overview.html">Overview</a></li>
-          <li><a href="./terms.html">Terms & Conditions</a></li>
-          <li><a href="./privacy.html">Privacy Policy</a></li>
-          <li><a href="./faq.html" class="active">FAQ</a></li>
-          <li><a href="../delete-account.html">Delete Account</a></li>
-          <li><a href="../contact.html">Contact Support</a></li>
-        </ul>
-      </aside>
+    <div style="padding: 60px 0 20px;">
+      <div class="doc-header">
+        <h1>Rider Partner FAQs</h1>
+        <p class="doc-date">Frequently asked questions regarding rider compliance, background locations, and payouts.</p>
+      </div>
 
-      <article class="legal-content">
-        <div class="doc-header">
-          <h1>Rider Partner FAQs</h1>
-          <p class="doc-date">Frequently asked questions regarding rider compliance, background locations, and payouts.</p>
-        </div>
-
-        <div class="doc-body">
+      <div class="doc-body" style="max-width: 750px; margin: 0 auto;">
+        <div class="faq-container">
           
-          <div class="faq-container">
-            
-            <div class="faq-item">
-              <div class="faq-question">
-                <span>1. Why is background location tracking mandatory for riders?</span>
-                <span class="faq-icon">+</span>
-              </div>
-              <div class="faq-answer">
-                <p>To operate on the GateTak network, we must track your device location in the background (when the application is closed or not in focus). This is necessary to auto-assign delivery orders close to your position, calculate real-time estimated arrival times (ETA), and allow customers to track transit routes. Tracking is immediately disabled when you set your status to "Offline" or sign out.</p>
-              </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>1. Why is background location tracking mandatory for riders?</span>
+              <span class="faq-icon">+</span>
             </div>
-
-            <div class="faq-item">
-              <div class="faq-question">
-                <span>2. Am I an employee of GateTak?</span>
-                <span class="faq-icon">+</span>
-              </div>
-              <div class="faq-answer">
-                <p>No, all rider partners operate on the platform as independent contractors. You are free to set your own working hours, choose when to log on or off, and manage your vehicle. You are solely responsible for filing your own income taxes and securing vehicle insurance.</p>
-              </div>
+            <div class="faq-answer">
+              <p>To operate on the GateTak network, we must track your device location in the background (when the application is closed or not in focus). This is necessary to auto-assign delivery orders close to your position, calculate real-time estimated arrival times (ETA), and allow customers to track transit routes. Tracking is immediately disabled when you set your status to "Offline" or sign out.</p>
             </div>
+          </div>
 
-            <div class="faq-item">
-              <div class="faq-question">
-                <span>3. How and when will I receive my earnings?</span>
-                <span class="faq-icon">+</span>
-              </div>
-              <div class="faq-answer">
-                <p>Rider partner earnings are compiled weekly. Your payout combines the base delivery rates plus coordinates-calculated distance rewards. Payments are deposited directly to your registered bank account or digital mobile wallet. Any cash collected on Cash on Delivery orders must be reconciled according to weekly platform limits.</p>
-              </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>2. Am I an employee of GateTak?</span>
+              <span class="faq-icon">+</span>
             </div>
-
-            <div class="faq-item">
-              <div class="faq-question">
-                <span>4. What criteria can result in rider account suspension?</span>
-                <span class="faq-icon">+</span>
-              </div>
-              <div class="faq-answer">
-                <p>Rider accounts may be suspended due to policy breaches, including failure to reconcile weekly COD cash collections, cancellation of orders after package pickup, customer abuse, traffic violations, or failure to maintain vehicle roadworthiness.</p>
-              </div>
+            <div class="faq-answer">
+              <p>No, all rider partners operate on the platform as independent contractors. You are free to set your own working hours, choose when to log on or off, and manage your vehicle. You are solely responsible for filing your own income taxes and securing vehicle insurance.</p>
             </div>
+          </div>
 
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>3. How and when will I receive my earnings?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Rider partner earnings are compiled weekly. Your payout combines the base delivery rates plus coordinates-calculated distance rewards. Payments are deposited directly to your registered bank account or digital mobile wallet. Any cash collected on Cash on Delivery orders must be reconciled according to weekly platform limits.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>4. What criteria can result in rider account suspension?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Rider accounts may be suspended due to policy breaches, including failure to reconcile weekly COD cash collections, cancellation of orders after package pickup, customer abuse, traffic violations, or failure to maintain vehicle roadworthiness.</p>
+            </div>
           </div>
 
         </div>
-      </article>
-
+      </div>
     </div>
   </main>
 
@@ -153,9 +160,9 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col footer-about">
-          <a href="../index.html" class="logo" style="color: var(--text-primary);">
+          <a href="../index.html" class="logo">
             <div class="logo-icon">G</div>
-            <span>GateTak</span>
+            GateTak <span>Legal</span>
           </a>
           <p>GateTak is a smart on-demand delivery network delivering foods, grocery items, and sweets to your doorstep with speed and security.</p>
         </div>

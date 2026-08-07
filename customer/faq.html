@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Customer Compliance & Help FAQs — GateTak</title>
+  <title>FAQ — GateTak Privacy & Terms</title>
   <link rel="stylesheet" href="../assets/css/styles.css">
   <script src="../assets/js/main.js" defer></script>
   <style>
@@ -11,7 +11,7 @@
       border: 1px solid var(--border-color);
       border-radius: 8px;
       margin-bottom: 12px;
-      background-color: var(--card-bg);
+      background-color: var(--bg-color);
       overflow: hidden;
     }
     .faq-question {
@@ -23,11 +23,10 @@
       justify-content: space-between;
       align-items: center;
       user-select: none;
-      background-color: var(--card-bg);
       transition: background-color 0.2s;
     }
     .faq-question:hover {
-      background-color: var(--bg-color);
+      background-color: var(--primary-light);
     }
     .faq-answer {
       padding: 0 20px;
@@ -59,104 +58,112 @@
     <div class="container header-inner">
       <a href="../index.html" class="logo">
         <div class="logo-icon">G</div>
-        <span>GateTak</span>
+        GateTak <span>Privacy & Terms</span>
       </a>
-      <button class="mobile-menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
       <ul class="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="./overview.html" class="active">Customer Legal</a></li>
-        <li><a href="../rider/overview.html">Rider Legal</a></li>
-        <li><a href="../vendor/overview.html">Vendor Legal</a></li>
-        <li><a href="../contact.html" class="cta-button">Contact Support</a></li>
+        <li><a href="./overview.html">Overview</a></li>
+        <li><a href="./privacy.html">Privacy Policy</a></li>
+        <li><a href="./terms.html">Terms of Service</a></li>
+        <li><a href="./refund.html">Refund Policy</a></li>
+        <li><a href="./faq.html" class="active">FAQ</a></li>
       </ul>
+      <div class="header-right">
+        <button class="grid-toggle" aria-label="Portals list">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"/></svg>
+        </button>
+        <div class="apps-dropdown">
+          <a href="../index.html" class="apps-item">
+            <div class="apps-item-icon">H</div>
+            <span>Home</span>
+          </a>
+          <a href="./overview.html" class="apps-item">
+            <div class="apps-item-icon">C</div>
+            <span>Customer Portal</span>
+          </a>
+          <a href="../rider/overview.html" class="apps-item">
+            <div class="apps-item-icon">R</div>
+            <span>Rider Portal</span>
+          </a>
+          <a href="../vendor/overview.html" class="apps-item">
+            <div class="apps-item-icon">V</div>
+            <span>Vendor Portal</span>
+          </a>
+          <a href="../contact.html" class="apps-item">
+            <div class="apps-item-icon">S</div>
+            <span>Contact Support</span>
+          </a>
+          <a href="../delete-account.html" class="apps-item">
+            <div class="apps-item-icon">D</div>
+            <span>Delete Account</span>
+          </a>
+        </div>
+        <div class="user-profile">G</div>
+      </div>
     </div>
   </header>
 
   <main class="container">
-    <div class="legal-layout">
-      
-      <aside class="sidebar">
-        <h4 class="sidebar-title">Customer Legal</h4>
-        <ul class="sidebar-menu">
-          <li><a href="./overview.html">Overview</a></li>
-          <li><a href="./terms.html">Terms & Conditions</a></li>
-          <li><a href="./privacy.html">Privacy Policy</a></li>
-          <li><a href="./refund.html">Refund & Cancellation</a></li>
-          <li><a href="./faq.html" class="active">FAQ</a></li>
-          <li><a href="../delete-account.html">Delete Account</a></li>
-          <li><a href="../contact.html">Contact Support</a></li>
-        </ul>
-      </aside>
+    <div style="padding: 60px 0 20px;">
+      <div class="doc-header">
+        <h1>Frequently Asked Questions</h1>
+        <p class="doc-date">Clear and simple answers to help you navigate our services and privacy policies.</p>
+      </div>
 
-      <article class="legal-content">
-        <div class="doc-header">
-          <h1>Frequently Asked Questions (FAQ)</h1>
-          <p class="doc-date">Clear and simple answers to help you navigate our services and privacy policies.</p>
-        </div>
-
-        <div class="doc-body">
+      <div class="doc-body" style="max-width: 750px; margin: 0 auto;">
+        <div class="faq-container">
           
-          <div class="faq-container">
-            
-            <div class="faq-item">
-              <div class="faq-question">
-                <span>1. Why does GateTak require my precise location data?</span>
-                <span class="faq-icon">+</span>
-              </div>
-              <div class="faq-answer">
-                <p>GateTak collects precise location coordinates (via GPS) to enable core features of the platform. We use this data to calculate exact distance fees from the merchant store, locate nearby delivery riders, and show live delivery progress on your tracking map. You can disable permissions, but will have to input addresses manually.</p>
-              </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>1. Why does GateTak require my precise location data?</span>
+              <span class="faq-icon">+</span>
             </div>
-
-            <div class="faq-item">
-              <div class="faq-question">
-                <span>2. Can I cancel my delivery order after placing it?</span>
-                <span class="faq-icon">+</span>
-              </div>
-              <div class="faq-answer">
-                <p>Yes, you can cancel your order free of charge, but only before the merchant accepts and begins preparing it. Once a vendor accepts the order or a rider is dispatched to collect items, cancellations are no longer accepted, and you will be billed for the full transaction value.</p>
-              </div>
+            <div class="faq-answer">
+              <p>GateTak collects precise location coordinates (via GPS) to enable core features of the platform. We use this data to calculate exact distance fees from the merchant store, locate nearby delivery riders, and show live delivery progress on your tracking map. You can disable permissions, but will have to input addresses manually.</p>
             </div>
+          </div>
 
-            <div class="faq-item">
-              <div class="faq-question">
-                <span>3. How do I request a refund for incorrect or damaged orders?</span>
-                <span class="faq-icon">+</span>
-              </div>
-              <div class="faq-answer">
-                <p>If you receive a package containing damaged goods, missing elements, or incorrect items, you must file a claim in the support center within 2 hours of receipt. Please provide your Order ID, a short description, and clear photos of the packaging as evidence. Approved refunds are processed to your payment source in 3 to 5 business days.</p>
-              </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>2. Can I cancel my delivery order after placing it?</span>
+              <span class="faq-icon">+</span>
             </div>
-
-            <div class="faq-item">
-              <div class="faq-question">
-                <span>4. How do I delete my account and associated profile records?</span>
-                <span class="faq-icon">+</span>
-              </div>
-              <div class="faq-answer">
-                <p>You can request permanent account deletion via our secure <a href="../delete-account.html">Account Deletion Page</a>. After submitting your details, we will send a confirmation link to verify ownership. Once verified, your credentials, order history, and location logs will be purged from our servers within 7 business days.</p>
-              </div>
+            <div class="faq-answer">
+              <p>Yes, you can cancel your order free of charge, but only before the merchant accepts and begins preparing it. Once a vendor accepts the order or a rider is dispatched to collect items, cancellations are no longer accepted, and you will be billed for the full transaction value.</p>
             </div>
+          </div>
 
-            <div class="faq-item">
-              <div class="faq-question">
-                <span>5. How is my payment information handled?</span>
-                <span class="faq-icon">+</span>
-              </div>
-              <div class="faq-answer">
-                <p>GateTak uses secure third-party payment gateways for digital card processing, meaning we never store your raw credit card numbers or PINs on our servers. For Cash on Delivery orders, transactions are settled directly with the rider upon arrival.</p>
-              </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>3. How do I request a refund for incorrect or damaged orders?</span>
+              <span class="faq-icon">+</span>
             </div>
+            <div class="faq-answer">
+              <p>If you receive a package containing damaged goods, missing elements, or incorrect items, you must file a claim in the support center within 2 hours of receipt. Please provide your Order ID, a short description, and clear photos of the packaging as evidence. Approved refunds are processed to your payment source in 3 to 5 business days.</p>
+            </div>
+          </div>
 
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>4. How do I delete my account and associated profile records?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>You can request permanent account deletion via our secure <a href="../delete-account.html">Account Deletion Page</a>. After submitting your details, we will send a confirmation link to verify ownership. Once verified, your credentials, order history, and location logs will be purged from our servers within 7 business days.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>5. How is my payment information handled?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>GateTak uses secure third-party payment gateways for digital card processing, meaning we never store your raw credit card numbers or PINs on our servers. For Cash on Delivery orders, transactions are settled directly with the rider upon arrival.</p>
+            </div>
           </div>
 
         </div>
-      </article>
-
+      </div>
     </div>
   </main>
 
@@ -164,9 +171,9 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col footer-about">
-          <a href="../index.html" class="logo" style="color: var(--text-primary);">
+          <a href="../index.html" class="logo">
             <div class="logo-icon">G</div>
-            <span>GateTak</span>
+            GateTak <span>Legal</span>
           </a>
           <p>GateTak is a smart on-demand delivery network delivering foods, grocery items, and sweets to your doorstep with speed and security.</p>
         </div>

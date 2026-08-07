@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Merchant Compliance & Support FAQs — GateTak</title>
+  <title>FAQ — GateTak Vendor</title>
   <link rel="stylesheet" href="../assets/css/styles.css">
   <script src="../assets/js/main.js" defer></script>
   <style>
@@ -11,7 +11,7 @@
       border: 1px solid var(--border-color);
       border-radius: 8px;
       margin-bottom: 12px;
-      background-color: var(--card-bg);
+      background-color: var(--bg-color);
       overflow: hidden;
     }
     .faq-question {
@@ -23,11 +23,10 @@
       justify-content: space-between;
       align-items: center;
       user-select: none;
-      background-color: var(--card-bg);
       transition: background-color 0.2s;
     }
     .faq-question:hover {
-      background-color: var(--bg-color);
+      background-color: var(--primary-light);
     }
     .faq-answer {
       padding: 0 20px;
@@ -59,93 +58,101 @@
     <div class="container header-inner">
       <a href="../index.html" class="logo">
         <div class="logo-icon">G</div>
-        <span>GateTak</span>
+        GateTak <span>Vendor</span>
       </a>
-      <button class="mobile-menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
       <ul class="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../customer/overview.html">Customer Legal</a></li>
-        <li><a href="../rider/overview.html">Rider Legal</a></li>
-        <li><a href="./overview.html" class="active">Vendor Legal</a></li>
-        <li><a href="../contact.html" class="cta-button">Contact Support</a></li>
+        <li><a href="./overview.html">Overview</a></li>
+        <li><a href="./privacy.html">Privacy Policy</a></li>
+        <li><a href="./terms.html">Terms of Service</a></li>
+        <li><a href="./faq.html" class="active">FAQ</a></li>
       </ul>
+      <div class="header-right">
+        <button class="grid-toggle" aria-label="Portals list">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"/></svg>
+        </button>
+        <div class="apps-dropdown">
+          <a href="../index.html" class="apps-item">
+            <div class="apps-item-icon">H</div>
+            <span>Home</span>
+          </a>
+          <a href="../customer/overview.html" class="apps-item">
+            <div class="apps-item-icon">C</div>
+            <span>Customer Portal</span>
+          </a>
+          <a href="../rider/overview.html" class="apps-item">
+            <div class="apps-item-icon">R</div>
+            <span>Rider Portal</span>
+          </a>
+          <a href="./overview.html" class="apps-item">
+            <div class="apps-item-icon">V</div>
+            <span>Vendor Portal</span>
+          </a>
+          <a href="../contact.html" class="apps-item">
+            <div class="apps-item-icon">S</div>
+            <span>Contact Support</span>
+          </a>
+          <a href="../delete-account.html" class="apps-item">
+            <div class="apps-item-icon">D</div>
+            <span>Delete Account</span>
+          </a>
+        </div>
+        <div class="user-profile">G</div>
+      </div>
     </div>
   </header>
 
   <main class="container">
-    <div class="legal-layout">
-      
-      <aside class="sidebar">
-        <h4 class="sidebar-title">Vendor Legal</h4>
-        <ul class="sidebar-menu">
-          <li><a href="./overview.html">Overview</a></li>
-          <li><a href="./terms.html">Merchant Agreement</a></li>
-          <li><a href="./privacy.html">Privacy Policy</a></li>
-          <li><a href="./faq.html" class="active">FAQ</a></li>
-          <li><a href="../delete-account.html">Delete Account</a></li>
-          <li><a href="../contact.html">Contact Support</a></li>
-        </ul>
-      </aside>
+    <div style="padding: 60px 0 20px;">
+      <div class="doc-header">
+        <h1>Merchant Vendor FAQs</h1>
+        <p class="doc-date">Frequently asked questions regarding vendor commercial compliance, store orders, and payouts.</p>
+      </div>
 
-      <article class="legal-content">
-        <div class="doc-header">
-          <h1>Merchant Vendor FAQs</h1>
-          <p class="doc-date">Frequently asked questions regarding vendor commercial compliance, store orders, and payouts.</p>
-        </div>
-
-        <div class="doc-body">
+      <div class="doc-body" style="max-width: 750px; margin: 0 auto;">
+        <div class="faq-container">
           
-          <div class="faq-container">
-            
-            <div class="faq-item">
-              <div class="faq-question">
-                <span>1. What are the product catalog listing rules for merchants?</span>
-                <span class="faq-icon">+</span>
-              </div>
-              <div class="faq-answer">
-                <p>Merchants must list item prices, description details, and availability accurately. You are solely responsible for ensuring prepared foods, groceries, and sweets meet local hygiene regulations and retail pricing display laws. Expired or banned items will result in immediate store removal.</p>
-              </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>1. What are the product catalog listing rules for merchants?</span>
+              <span class="faq-icon">+</span>
             </div>
-
-            <div class="faq-item">
-              <div class="faq-question">
-                <span>2. How are direct settlements processed and when?</span>
-                <span class="faq-icon">+</span>
-              </div>
-              <div class="faq-answer">
-                <p>Non-COD merchant payouts are processed bi-weekly. Direct deposits are transferred automatically into your registered corporate bank account. Detailed payment statements showing order commission fee deductions are emailed to your account dashboard weekly.</p>
-              </div>
+            <div class="faq-answer">
+              <p>Merchants must list item prices, description details, and availability accurately. You are solely responsible for ensuring prepared foods, groceries, and sweets meet local hygiene regulations and retail pricing display laws. Expired or banned items will result in immediate store removal.</p>
             </div>
+          </div>
 
-            <div class="faq-item">
-              <div class="faq-question">
-                <span>3. Who pays for missing items or customer order refund claims?</span>
-                <span class="faq-icon">+</span>
-              </div>
-              <div class="faq-answer">
-                <p>If a customer files a valid order refund claim (e.g., prepared wrong meal, missing catalog items) and support verifies the error, the cost of the disputed item is debited from your pending platform balance. If the dispute is caused by a rider delay or delivery transit spill, the merchant will not be charged.</p>
-              </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>2. How are direct settlements processed and when?</span>
+              <span class="faq-icon">+</span>
             </div>
-
-            <div class="faq-item">
-              <div class="faq-question">
-                <span>4. How can I adjust store opening hours or close my listing?</span>
-                <span class="faq-icon">+</span>
-              </div>
-              <div class="faq-answer">
-                <p>You can adjust operational hours, prep timings, and catalog listings directly inside the Merchant Portal dashboard. To permanently close your storefront and purge database records, please submit an inquiry on our <a href="../delete-account.html">Account Deletion Page</a>.</p>
-              </div>
+            <div class="faq-answer">
+              <p>Non-COD merchant payouts are processed bi-weekly. Direct deposits are transferred automatically into your registered corporate bank account. Detailed payment statements showing order commission fee deductions are emailed to your account dashboard weekly.</p>
             </div>
+          </div>
 
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>3. Who pays for missing items or customer order refund claims?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>If a customer files a valid order refund claim (e.g., prepared wrong meal, missing catalog items) and support verifies the error, the cost of the disputed item is debited from your pending platform balance. If the dispute is caused by a rider delay or delivery transit spill, the merchant will not be charged.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>4. How can I adjust store opening hours or close my listing?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>You can adjust operational hours, prep timings, and catalog listings directly inside the Merchant Portal dashboard. To permanently close your storefront and purge database records, please submit an inquiry on our <a href="../delete-account.html">Account Deletion Page</a>.</p>
+            </div>
           </div>
 
         </div>
-      </article>
-
+      </div>
     </div>
   </main>
 
@@ -153,9 +160,9 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col footer-about">
-          <a href="../index.html" class="logo" style="color: var(--text-primary);">
+          <a href="../index.html" class="logo">
             <div class="logo-icon">G</div>
-            <span>GateTak</span>
+            GateTak <span>Legal</span>
           </a>
           <p>GateTak is a smart on-demand delivery network delivering foods, grocery items, and sweets to your doorstep with speed and security.</p>
         </div>
