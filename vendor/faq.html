@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merchant Compliance & Support FAQs — GateTak</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <script src="../assets/js/main.js" defer></script>
+  <style>
+    .faq-item {
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      margin-bottom: 12px;
+      background-color: var(--card-bg);
+      overflow: hidden;
+    }
+    .faq-question {
+      padding: 16px 20px;
+      font-weight: 600;
+      color: var(--text-primary);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+      background-color: var(--card-bg);
+      transition: background-color 0.2s;
+    }
+    .faq-question:hover {
+      background-color: var(--bg-color);
+    }
+    .faq-answer {
+      padding: 0 20px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+      color: var(--text-secondary);
+      font-size: 14.5px;
+      border-top: 0px solid transparent;
+    }
+    .faq-item.active .faq-answer {
+      padding: 16px 20px;
+      max-height: 500px;
+      border-top: 1px solid var(--border-color);
+    }
+    .faq-icon {
+      font-weight: 700;
+      transition: transform 0.2s;
+      color: var(--primary);
+    }
+    .faq-item.active .faq-icon {
+      transform: rotate(45deg);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">G</div>
+        <span>GateTak</span>
+      </a>
+      <button class="mobile-menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../customer/overview.html">Customer Legal</a></li>
+        <li><a href="../rider/overview.html">Rider Legal</a></li>
+        <li><a href="./overview.html" class="active">Vendor Legal</a></li>
+        <li><a href="../contact.html" class="cta-button">Contact Support</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="legal-layout">
+      
+      <aside class="sidebar">
+        <h4 class="sidebar-title">Vendor Legal</h4>
+        <ul class="sidebar-menu">
+          <li><a href="./overview.html">Overview</a></li>
+          <li><a href="./terms.html">Merchant Agreement</a></li>
+          <li><a href="./privacy.html">Privacy Policy</a></li>
+          <li><a href="./faq.html" class="active">FAQ</a></li>
+          <li><a href="../delete-account.html">Delete Account</a></li>
+          <li><a href="../contact.html">Contact Support</a></li>
+        </ul>
+      </aside>
+
+      <article class="legal-content">
+        <div class="doc-header">
+          <h1>Merchant Vendor FAQs</h1>
+          <p class="doc-date">Frequently asked questions regarding vendor commercial compliance, store orders, and payouts.</p>
+        </div>
+
+        <div class="doc-body">
+          
+          <div class="faq-container">
+            
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>1. What are the product catalog listing rules for merchants?</span>
+                <span class="faq-icon">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>Merchants must list item prices, description details, and availability accurately. You are solely responsible for ensuring prepared foods, groceries, and sweets meet local hygiene regulations and retail pricing display laws. Expired or banned items will result in immediate store removal.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>2. How are direct settlements processed and when?</span>
+                <span class="faq-icon">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>Non-COD merchant payouts are processed bi-weekly. Direct deposits are transferred automatically into your registered corporate bank account. Detailed payment statements showing order commission fee deductions are emailed to your account dashboard weekly.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>3. Who pays for missing items or customer order refund claims?</span>
+                <span class="faq-icon">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>If a customer files a valid order refund claim (e.g., prepared wrong meal, missing catalog items) and support verifies the error, the cost of the disputed item is debited from your pending platform balance. If the dispute is caused by a rider delay or delivery transit spill, the merchant will not be charged.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>4. How can I adjust store opening hours or close my listing?</span>
+                <span class="faq-icon">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>You can adjust operational hours, prep timings, and catalog listings directly inside the Merchant Portal dashboard. To permanently close your storefront and purge database records, please submit an inquiry on our <a href="../delete-account.html">Account Deletion Page</a>.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <a href="../index.html" class="logo" style="color: var(--text-primary);">
+            <div class="logo-icon">G</div>
+            <span>GateTak</span>
+          </a>
+          <p>GateTak is a smart on-demand delivery network delivering foods, grocery items, and sweets to your doorstep with speed and security.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Customer Docs</h4>
+          <ul>
+            <li><a href="../customer/terms.html">Terms of Service</a></li>
+            <li><a href="../customer/privacy.html">Privacy Policy</a></li>
+            <li><a href="../customer/refund.html">Refund Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Rider Docs</h4>
+          <ul>
+            <li><a href="../rider/terms.html">Rider Agreement</a></li>
+            <li><a href="../rider/privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Vendor Docs</h4>
+          <ul>
+            <li><a href="./terms.html">Merchant Agreement</a></li>
+            <li><a href="./privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 GateTak. All rights reserved.</p>
+        <p>Built for Google Play & App Store Compliance</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const faqQuestions = document.querySelectorAll('.faq-question');
+      faqQuestions.forEach(question => {
+        question.addEventListener('click', () => {
+          const item = question.parentElement;
+          item.classList.toggle('active');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
