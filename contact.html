@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Support — GateTak</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="container header-inner">
+      <a href="./index.html" class="logo">
+        <div class="logo-icon">G</div>
+        <span>GateTak</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./customer/terms.html">Customer Legal</a></li>
+        <li><a href="./rider/terms.html">Rider Legal</a></li>
+        <li><a href="./vendor/terms.html">Vendor Legal</a></li>
+        <li><a href="./contact.html" class="cta-button">Contact Support</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="form-card" id="form-container">
+      <div class="form-header">
+        <h2>Contact Support</h2>
+        <p>Submit a help request ticket and our operations agent team will contact you back shortly.</p>
+      </div>
+
+      <form id="contact-form" onsubmit="handleContactSubmit(event)">
+        <div class="form-group">
+          <label for="full-name">Your Full Name *</label>
+          <input type="text" id="full-name" class="form-control" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" class="form-control" placeholder="yourname@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number (Optional)</label>
+          <input type="tel" id="phone" class="form-control" placeholder="e.g. +923001234567">
+        </div>
+
+        <div class="form-group">
+          <label for="user-type">I am a *</label>
+          <select id="user-type" class="form-control" required>
+            <option value="" disabled selected>Select profile category</option>
+            <option value="customer">Customer</option>
+            <option value="rider">Rider Partner</option>
+            <option value="vendor">Vendor Merchant</option>
+            <option value="other">General Inquirer</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message Details *</label>
+          <textarea id="message" class="form-control" rows="5" placeholder="Detail your issue or question here..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Submit Support Ticket</button>
+      </form>
+    </div>
+
+    <!-- Success Screen (Hidden by default) -->
+    <div class="form-card success-screen" id="success-container" style="display: none;">
+      <div class="success-icon">&check;</div>
+      <h2>Message Received</h2>
+      <p style="margin-top: 10px; margin-bottom: 24px; color: var(--text-muted);">Thank you for reaching out. We have registered your support ticket under review number #GT-2608. One of our support agents will respond to your email address within 24 hours.</p>
+      <a href="./index.html" class="cta-button">Return to Home</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <a href="./index.html" class="logo" style="color: #FFF;">
+            <div class="logo-icon">G</div>
+            <span>GateTak</span>
+          </a>
+          <p>GateTak is a smart on-demand delivery network delivering foods, grocery items, and sweets to your doorstep with speed and security.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Customer Docs</h4>
+          <ul>
+            <li><a href="./customer/terms.html">Terms of Service</a></li>
+            <li><a href="./customer/privacy.html">Privacy Policy</a></li>
+            <li><a href="./customer/refund.html">Refund Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Rider Docs</h4>
+          <ul>
+            <li><a href="./rider/terms.html">Rider Agreement</a></li>
+            <li><a href="./rider/privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Vendor Docs</h4>
+          <ul>
+            <li><a href="./vendor/terms.html">Merchant Agreement</a></li>
+            <li><a href="./vendor/privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 GateTak. All rights reserved.</p>
+        <p>Built for Google Play & App Store Compliance</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function handleContactSubmit(event) {
+      event.preventDefault();
+      // Animation transition from form card to success container
+      document.getElementById('form-container').style.display = 'none';
+      document.getElementById('success-container').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
