@@ -28,7 +28,7 @@ export default function VendorFaq() {
   ];
 
   return (
-    <div style={{ padding: '60px 0 20px' }}>
+    <div className="container" style={{ padding: '60px 0 20px' }}>
       <div className="doc-header">
         <h1>Merchant Vendor FAQs</h1>
         <p className="doc-date">Frequently asked questions regarding vendor commercial compliance, store orders, and payouts.</p>

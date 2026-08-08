@@ -61,7 +61,8 @@ export default function VendorPrivacy() {
   }, []);
 
   return (
-    <div className="legal-layout">
+    <div className="container">
+      <div className="legal-layout">
       <aside class="sidebar">
         <h4 class="sidebar-title">Privacy Outline</h4>
         <ul class="sidebar-menu">
@@ -107,6 +108,7 @@ export default function VendorPrivacy() {
           <p>For questions about merchant privacy policies or financial data security, contact <Link to="/contact">Merchant Support</Link>.</p>
         </div>
       </article>
+      </div>
     </div>
   );
 }

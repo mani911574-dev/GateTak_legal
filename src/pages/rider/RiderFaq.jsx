@@ -28,7 +28,7 @@ export default function RiderFaq() {
   ];
 
   return (
-    <div style={{ padding: '60px 0 20px' }}>
+    <div className="container" style={{ padding: '60px 0 20px' }}>
       <div className="doc-header">
         <h1>Rider Partner FAQs</h1>
         <p className="doc-date">Frequently asked questions regarding rider compliance, background locations, and payouts.</p>

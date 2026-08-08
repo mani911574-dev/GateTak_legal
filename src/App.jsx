@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import DeleteAccount from './pages/DeleteAccount';
+import About from './pages/About';
 
 import CustomerOverview from './pages/customer/CustomerOverview';
 import CustomerTerms from './pages/customer/CustomerTerms';
@@ -30,6 +31,7 @@ export default function App() {
         <main style={{ flex: 1 }}>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/delete-account" element={<DeleteAccount />} />
             

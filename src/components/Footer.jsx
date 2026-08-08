@@ -12,6 +12,11 @@ export default function Footer() {
               GateTak <span>Legal</span>
             </Link>
             <p>GateTak is a smart on-demand delivery network delivering foods, grocery items, and sweets to your doorstep with speed and security.</p>
+            <p style={{ marginTop: '12px' }}>
+              <Link to="/about" style={{ color: 'var(--primary)', fontWeight: '600', textDecoration: 'none' }}>
+                Learn more About Us &rarr;
+              </Link>
+            </p>
           </div>
           <div className="footer-col">
             <h4>Customer Docs</h4>

@@ -61,7 +61,8 @@ export default function CustomerRefund() {
   }, []);
 
   return (
-    <div className="legal-layout">
+    <div className="container">
+      <div className="legal-layout">
       <aside class="sidebar">
         <h4 class="sidebar-title">Refund Outline</h4>
         <ul class="sidebar-menu">
@@ -115,6 +116,7 @@ export default function CustomerRefund() {
           <p>Approved claims will be refunded to your designated platform wallet or original payment source within 3–5 business days.</p>
         </div>
       </article>
+      </div>
     </div>
   );
 }

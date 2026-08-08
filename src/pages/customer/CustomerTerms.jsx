@@ -61,7 +61,8 @@ export default function CustomerTerms() {
   }, []);
 
   return (
-    <div className="legal-layout">
+    <div className="container">
+      <div className="legal-layout">
       <aside className="sidebar">
         <h4 className="sidebar-title">Terms Outline</h4>
         <ul className="sidebar-menu">
@@ -118,6 +119,7 @@ export default function CustomerTerms() {
           <p>If you have any questions or feedback regarding these terms, please contact us via our <Link to="/contact">Support Form</Link>.</p>
         </div>
       </article>
+      </div>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import logoImg from '../../assets/images/logo.png';
 
 export default function Header() {
   const [dropdownActive, setDropdownActive] = useState(false);
@@ -32,6 +33,7 @@ export default function Header() {
   if (path.startsWith('/customer')) {
     logoText = 'GateTak <span>Privacy & Terms</span>';
     navItems = [
+      { name: 'Home', path: '/' },
       { name: 'Overview', path: '/customer' },
       { name: 'Privacy Policy', path: '/customer/privacy' },
       { name: 'Terms of Service', path: '/customer/terms' },
@@ -41,6 +43,7 @@ export default function Header() {
   } else if (path.startsWith('/rider')) {
     logoText = 'GateTak <span>Rider</span>';
     navItems = [
+      { name: 'Home', path: '/' },
       { name: 'Overview', path: '/rider' },
       { name: 'Privacy Policy', path: '/rider/privacy' },
       { name: 'Terms of Service', path: '/rider/terms' },
@@ -49,15 +52,28 @@ export default function Header() {
   } else if (path.startsWith('/vendor')) {
     logoText = 'GateTak <span>Vendor</span>';
     navItems = [
+      { name: 'Home', path: '/' },
       { name: 'Overview', path: '/vendor' },
       { name: 'Privacy Policy', path: '/vendor/privacy' },
       { name: 'Terms of Service', path: '/vendor/terms' },
       { name: 'FAQ', path: '/vendor/faq' }
     ];
-  } else if (path === '/contact') {
-    logoText = 'GateTak <span>Support</span>';
-  } else if (path === '/delete-account') {
-    logoText = 'GateTak <span>Safety Center</span>';
+  } else {
+    logoText = 'GateTak <span>Legal Portal</span>';
+    navItems = [
+      { name: 'Home', path: '/' },
+      { name: 'Customer Portal', path: '/customer' },
+      { name: 'Rider Portal', path: '/rider' },
+      { name: 'Vendor Portal', path: '/vendor' },
+      { name: 'About Us', path: '/about' }
+    ];
+    if (path === '/contact') {
+      logoText = 'GateTak <span>Support</span>';
+    } else if (path === '/delete-account') {
+      logoText = 'GateTak <span>Safety Center</span>';
+    } else if (path === '/about') {
+      logoText = 'GateTak <span>About Us</span>';
+    }
   }
 
   // Helper to check if a tab path is active
@@ -73,7 +89,7 @@ export default function Header() {
     <header>
       <div class="container header-inner">
         <Link to="/" className="logo" onClick={() => setDropdownActive(false)}>
-          <div className="logo-icon">G</div>
+          <img src={logoImg} className="logo-img" alt="GateTak Logo" />
           <span dangerouslySetInnerHTML={{ __html: logoText }} />
         </Link>
 
@@ -92,47 +108,7 @@ export default function Header() {
           </ul>
         )}
 
-        <div className="header-right">
-          <button 
-            ref={toggleRef}
-            className="grid-toggle" 
-            aria-label="Portals list"
-            onClick={() => setDropdownActive(!dropdownActive)}
-          >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"/>
-            </svg>
-          </button>
-          
-          <div ref={dropdownRef} className={`apps-dropdown ${dropdownActive ? 'active' : ''}`}>
-            <Link to="/" className="apps-item" onClick={() => setDropdownActive(false)}>
-              <div className="apps-item-icon">H</div>
-              <span>Home</span>
-            </Link>
-            <Link to="/customer" className="apps-item" onClick={() => setDropdownActive(false)}>
-              <div className="apps-item-icon">C</div>
-              <span>Customer Portal</span>
-            </Link>
-            <Link to="/rider" className="apps-item" onClick={() => setDropdownActive(false)}>
-              <div className="apps-item-icon">R</div>
-              <span>Rider Portal</span>
-            </Link>
-            <Link to="/vendor" className="apps-item" onClick={() => setDropdownActive(false)}>
-              <div className="apps-item-icon">V</div>
-              <span>Vendor Portal</span>
-            </Link>
-            <Link to="/contact" className="apps-item" onClick={() => setDropdownActive(false)}>
-              <div className="apps-item-icon">S</div>
-              <span>Contact Support</span>
-            </Link>
-            <Link to="/delete-account" className="apps-item" onClick={() => setDropdownActive(false)}>
-              <div className="apps-item-icon">D</div>
-              <span>Delete Account</span>
-            </Link>
-          </div>
-          
-          <div className="user-profile">G</div>
-        </div>
+        <div className="header-right"></div>
       </div>
     </header>
   );

@@ -61,7 +61,8 @@ export default function RiderTerms() {
   }, []);
 
   return (
-    <div className="legal-layout">
+    <div className="container">
+      <div className="legal-layout">
       <aside className="sidebar">
         <h4 className="sidebar-title">Rider Outline</h4>
         <ul className="sidebar-menu">
@@ -112,6 +113,7 @@ export default function RiderTerms() {
           <p>If you have questions about weekly settlements or terms compliance, reach out via the <Link to="/contact">Rider Support Form</Link>.</p>
         </div>
       </article>
+      </div>
     </div>
   );
 }

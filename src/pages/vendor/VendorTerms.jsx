@@ -61,7 +61,8 @@ export default function VendorTerms() {
   }, []);
 
   return (
-    <div className="legal-layout">
+    <div className="container">
+      <div className="legal-layout">
       <aside className="sidebar">
         <h4 className="sidebar-title">Merchant Outline</h4>
         <ul className="sidebar-menu">
@@ -107,6 +108,7 @@ export default function VendorTerms() {
           <p>For store payout adjustments or support queries, contact us at <Link to="/contact">Merchant Support</Link>.</p>
         </div>
       </article>
+      </div>
     </div>
   );
 }

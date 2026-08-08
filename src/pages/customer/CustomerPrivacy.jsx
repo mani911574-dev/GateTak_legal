@@ -61,7 +61,8 @@ export default function CustomerPrivacy() {
   }, []);
 
   return (
-    <div className="legal-layout">
+    <div className="container">
+      <div className="legal-layout">
       <aside class="sidebar">
         <h4 class="sidebar-title">Privacy Outline</h4>
         <ul class="sidebar-menu">
@@ -130,6 +131,7 @@ export default function CustomerPrivacy() {
           <p>For privacy queries, data access requests, or policy updates, contact our privacy officer through our <Link to="/contact">Support Form</Link>.</p>
         </div>
       </article>
+      </div>
     </div>
   );
 }

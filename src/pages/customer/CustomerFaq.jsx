@@ -32,7 +32,7 @@ export default function CustomerFaq() {
   ];
 
   return (
-    <div style={{ padding: '60px 0 20px' }}>
+    <div className="container" style={{ padding: '60px 0 20px' }}>
       <div className="doc-header">
         <h1>Frequently Asked Questions</h1>
         <p className="doc-date">Clear and simple answers to help you navigate our services and privacy policies.</p>
