@@ -8,15 +8,10 @@ import chickenImg from '../../assets/images/chicken_leg.png';
 export default function Home() {
   const [isRevealed, setIsRevealed] = useState(false);
   const [scrollRatio, setScrollRatio] = useState(1); // 0 when centered in screen, 1 when offscreen
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const sectionRef = useRef(null);
 
   useEffect(() => {
     const handleScrollAndResize = () => {
-      // Update responsive state
-      const mobileView = window.innerWidth <= 768;
-      setIsMobile(mobileView);
-
       if (sectionRef.current) {
         const rect = sectionRef.current.getBoundingClientRect();
         const windowHeight = window.innerHeight;
@@ -52,30 +47,18 @@ export default function Home() {
     };
   }, []);
 
-  // Compute scroll-linked transform values for desktop (ratio: 0 centered, 1 offscreen)
-  const burgerTransform = isMobile 
-    ? undefined 
-    : `translate3d(${-scrollRatio * 160}px, 0, 0) rotate(${-5 - scrollRatio * 10}deg) scale(${1 - scrollRatio * 0.1})`;
-
-  const chickenTransform = isMobile 
-    ? undefined 
-    : `translate3d(${scrollRatio * 160}px, ${-scrollRatio * 40}px, 0) rotate(${5 + scrollRatio * 10}deg) scale(${1 - scrollRatio * 0.1})`;
-
-  const pizzaTransform = isMobile 
-    ? undefined 
-    : `translate3d(${scrollRatio * 160}px, ${scrollRatio * 40}px, 0) rotate(${-8 - scrollRatio * 10}deg) scale(${1 - scrollRatio * 0.1})`;
-
   return (
     <div>
 
       {/* Scroll Reveal Animation Section with dynamic scroll parallax mapping */}
-      <section className="scroll-animate-section" ref={sectionRef}>
+      <section 
+        className="scroll-animate-section" 
+        ref={sectionRef} 
+        style={{ '--scroll-ratio': scrollRatio }}
+      >
         <div className="scroll-animate-container">
           {/* Left: Burger */}
-          <div 
-            className={`float-wrapper wrapper-burger ${isRevealed ? 'active' : ''}`}
-            style={{ transform: burgerTransform }}
-          >
+          <div className={`float-wrapper wrapper-burger ${isRevealed ? 'active' : ''}`}>
             <img src={burgerImg} className="float-img" alt="Fresh Juicy Burger" />
           </div>
           
@@ -85,18 +68,12 @@ export default function Home() {
           </h2>
 
           {/* Right Top: Chicken Leg */}
-          <div 
-            className={`float-wrapper wrapper-chicken ${isRevealed ? 'active' : ''}`}
-            style={{ transform: chickenTransform }}
-          >
+          <div className={`float-wrapper wrapper-chicken ${isRevealed ? 'active' : ''}`}>
             <img src={chickenImg} className="float-img" alt="Crispy Chicken Leg" />
           </div>
 
           {/* Right Bottom: Pizza Slice */}
-          <div 
-            className={`float-wrapper wrapper-pizza ${isRevealed ? 'active' : ''}`}
-            style={{ transform: pizzaTransform }}
-          >
+          <div className={`float-wrapper wrapper-pizza ${isRevealed ? 'active' : ''}`}>
             <img src={pizzaSliceImg} className="float-img" alt="Hot Pizza Slice" />
           </div>
         </div>
